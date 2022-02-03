@@ -1,0 +1,55 @@
+.naslov{
+    text-align: center;
+    border: solid;
+}
+.img{
+    border: solid;
+    text-align: center;
+   
+    
+    
+  
+}
+.tekst{
+    border: solid;
+    text-align: center;
+   
+   
+    
+}
+.mz{
+    border: solid;
+    text-align: center;
+    
+}
+.ps{
+    font-size: 100px;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+
+}
+
+.p{
+    font-family: 'Baloo Bhaijaan 2', cursive;
+}
+
+#slika{
+    font-family: 'Lato', sans-serif;
+}
+#podaci{
+    font-family: 'Lato', sans-serif;
+}
+#motiv{
+    font-family: 'Lato', sans-serif;
+}
+
+/*
+Moje
+*/
+.container{
+    display: flex;
+    border: solid;
+}
+.col{
+    margin: auto;
+    text-align: center;
+}
