@@ -1,0 +1,34 @@
+
+weather: rainy, sunny, stormy
+zone: white, green,yellow
+railway: yes, no
+noi: 0,1,2,3,4,7,9,10,11,12
+hour: 0,1,3,5,6,7,8,9,10,11
+expected: 0,30,35,40,45
+
+if [weather] = "rainy" and [zone] = "green" and [railway] = "yes" and [noi]>10 then [expected] = 45;
+
+if [weather] = "rainy" and [zone] = "green" and [railway] = "no" and [noi] > 10 then [expected] = 40;
+
+
+if [weather] = "rainy" and [zone] = "white" and ([hour] >=7 and [hour]<=9) then [expected] = 35;
+
+if [weather] = "rainy" and [zone] = "white" and ([hour] <7 and [hour] >9 ) then [expected]= 30;
+
+if [weather] = "rainy" and [zone] = "green" and [noi] <= 10 then [expected] = 30;
+
+if [weather] = "rainy" and [zone] = "Yellow" then [expected] = 30;
+
+if [weather] = "Stormy" and [zone] = "Yellow" and [noi] >= 3 then [expected] = 50;
+
+if [weather] = "stormy" and [zone] = "Yellow" and [noi] < 3 then [expected] = 45;
+
+if [weather] = "stormy" and ([zone]= "green" or [zone] = "white" ) then [expected] = 45;
+
+if [weather] = "sunny" then [expected] = 0;
+
+
+
+
+
+
